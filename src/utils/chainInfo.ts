@@ -528,8 +528,8 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     features: ["stargate", "ibc-transfer"],
   },
   [ChainInfoID.IxoPandora8]: {
-    rpc: "https://testnet.ixo.earth/rpc",
-    rest: "https://testnet.ixo.earth/rest",
+    rpc: "https://testnet.ixo.earth/rpc/",
+    rest: "https://testnet.ixo.earth/rest/",
     chainId: ChainInfoID.IxoPandora8,
     chainName: "IXO",
     bip44: {
@@ -550,8 +550,8 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     features: ["stargate", "ibc-transfer"],
   },
   [ChainInfoID.IxoDevnet1]: {
-    rpc: "https://devnet.ixo.earth/rpc",
-    rest: "https://devnet.ixo.earth/rest",
+    rpc: "https://devnet.ixo.earth/rpc/",
+    rest: "https://devnet.ixo.earth/rest/",
     chainId: ChainInfoID.IxoDevnet1,
     chainName: "IXO",
     bip44: {
