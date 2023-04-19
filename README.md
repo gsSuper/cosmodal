@@ -1,16 +1,16 @@
-# @noahsaso/cosmodal
+# @gssuper/cosmodal
 
 A wallet connector with mobile WalletConnect support for the Cosmos ecosystem.
 
 ## Example
 
-The example is deployed on Vercel at https://cosmodal-noahsaso.vercel.app/
+The example is deployed on Vercel at https://cosmodal-gssuper.vercel.app/
 
 It can also be run locally using these commands:
 
 ```sh
 # Clone the repo.
-git clone https://github.com/NoahSaso/cosmodal
+git clone https://github.com/gsSuper/cosmodal
 # Enter the example folder.
 cd cosmodal/example
 
@@ -26,11 +26,11 @@ yarn && yarn dev
    peer dependencies.
 
 ```sh
-npm install --save @noahsaso/cosmodal @cosmjs/amino @cosmjs/cosmwasm-stargate @cosmjs/crypto \
+npm install --save @gssuper/cosmodal @cosmjs/amino @cosmjs/cosmwasm-stargate @cosmjs/crypto \
 @cosmjs/encoding @cosmjs/proto-signing @cosmjs/stargate @keplr-wallet/common \
 @keplr-wallet/cosmos @keplr-wallet/provider @keplr-wallet/stores @keplr-wallet/types
 # OR
-yarn add @noahsaso/cosmodal @cosmjs/amino @cosmjs/cosmwasm-stargate @cosmjs/crypto \
+yarn add @gssuper/cosmodal @cosmjs/amino @cosmjs/cosmwasm-stargate @cosmjs/crypto \
 @cosmjs/encoding @cosmjs/proto-signing @cosmjs/stargate @keplr-wallet/common \
 @keplr-wallet/cosmos @keplr-wallet/provider @keplr-wallet/stores @keplr-wallet/types
 ```
@@ -45,7 +45,7 @@ import {
   WalletManagerProvider,
   ChainInfoID,
   WalletType,
-} from "@noahsaso/cosmodal"
+} from "@gssuper/cosmodal"
 
 const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => (
   <WalletManagerProvider
@@ -77,7 +77,7 @@ import {
   useWalletManager,
   useWallet,
   WalletConnectionStatus,
-} from "@noahsaso/cosmodal"
+} from "@gssuper/cosmodal"
 
 const Home: NextPage = () => {
   const { connect, disconnect } = useWalletManager()

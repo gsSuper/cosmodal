@@ -4,7 +4,7 @@ import {
   useWallet,
   useWalletManager,
   ChainInfoID,
-} from "@noahsaso/cosmodal"
+} from "@gssuper/cosmodal"
 import type { NextPage } from "next"
 import { useCallback, useState } from "react"
 
@@ -28,8 +28,9 @@ const Home: NextPage = () => {
 
     setStatus("Loading...")
 
-    const offlineSignerAmino =
-      await walletClient.getOfflineSignerOnlyAmino(ChainInfoID.Juno1)
+    const offlineSignerAmino = await walletClient.getOfflineSignerOnlyAmino(
+      ChainInfoID.Juno1
+    )
 
     try {
       // Parse message.
@@ -46,16 +47,16 @@ const Home: NextPage = () => {
           },
         ],
         {
-          gas: '0',
+          gas: "0",
           amount: [
             {
-              denom: 'ujuno',
-              amount: '0',
+              denom: "ujuno",
+              amount: "0",
             },
           ],
         },
         ChainInfoID.Juno1,
-        '',
+        "",
         0,
         0
       )
@@ -82,10 +83,7 @@ const Home: NextPage = () => {
               Address: <b>{address}</b>
             </p>
             <p>
-              Public key:{" "}
-              <b>
-                {publicKey?.hex ?? '<empty>'}
-              </b>
+              Public key: <b>{publicKey?.hex ?? "<empty>"}</b>
             </p>
             <button
               onClick={disconnect}

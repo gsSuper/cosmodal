@@ -16,7 +16,7 @@ module.exports = {
     filename: "[name].js",
     chunkFilename: "[name].chunk.js",
     libraryTarget: "umd",
-    library: "@noahsaso/cosmodal",
+    library: "@gssuper/cosmodal",
     umdNamedDefine: true,
     globalObject: "this",
     publicPath: '',

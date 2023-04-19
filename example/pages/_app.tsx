@@ -4,7 +4,7 @@ import {
   ChainInfoID,
   WalletManagerProvider,
   WalletType,
-} from "@noahsaso/cosmodal"
+} from "@gssuper/cosmodal"
 import type { AppProps } from "next/app"
 import { FunctionComponent } from "react"
 import { GasPrice } from "@cosmjs/stargate"
@@ -12,8 +12,8 @@ import { GasPrice } from "@cosmjs/stargate"
 const LOCAL_STORAGE_KEY = "connectedWalletId"
 const web3AuthWalletOptions = {
   client: {
-    clientId: 'example',
-    web3AuthNetwork: 'testnet',
+    clientId: "example",
+    web3AuthNetwork: "testnet",
   },
   promptSign: () => confirm("Sign this transaction?"),
 }
@@ -22,8 +22,8 @@ const MyApp: FunctionComponent<AppProps> = ({ Component, pageProps }) => (
   <WalletManagerProvider
     walletConnectClientMeta={{
       name: "CosmodalExampleDApp",
-      description: "A dApp using the @noahsaso/cosmodal library.",
-      url: "https://cosmodal-noahsaso.vercel.app/",
+      description: "A dApp using the @gssuper/cosmodal library.",
+      url: "https://cosmodal-gssuper.vercel.app/",
       icons: ["https://moonphase.is/image.svg"],
     }}
     enabledWalletTypes={[

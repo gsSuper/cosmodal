@@ -2,7 +2,7 @@ import {
   WalletConnectionStatus,
   useWallet,
   useWalletManager,
-} from "@noahsaso/cosmodal"
+} from "@gssuper/cosmodal"
 import type { NextPage } from "next"
 import { useCallback, useState } from "react"
 
