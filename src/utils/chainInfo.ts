@@ -505,10 +505,54 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     ],
     features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"],
   },
-  [ChainInfoID.Impacthub3]: {
+  [ChainInfoID.Ixo4]: {
     rpc: "https://rpc-impacthub.keplr.app",
     rest: "https://lcd-impacthub.keplr.app",
-    chainId: ChainInfoID.Impacthub3,
+    chainId: ChainInfoID.Ixo4,
+    chainName: "IXO",
+    bip44: {
+      coinType: 118,
+    },
+    bech32Config: Bech32Address.defaultBech32Config("ixo"),
+    currencies: [
+      {
+        coinDenom: "IXO",
+        coinMinimalDenom: "uixo",
+        coinDecimals: 6,
+        coinGeckoId: "pool:uixo",
+        coinImageUrl: "/tokens/ixo.png",
+        isStakeCurrency: true,
+        isFeeCurrency: true,
+      },
+    ],
+    features: ["stargate", "ibc-transfer"],
+  },
+  [ChainInfoID.IxoPandora8]: {
+    rpc: "https://testnet.ixo.earth/rpc",
+    rest: "https://testnet.ixo.earth/rest",
+    chainId: ChainInfoID.IxoPandora8,
+    chainName: "IXO",
+    bip44: {
+      coinType: 118,
+    },
+    bech32Config: Bech32Address.defaultBech32Config("ixo"),
+    currencies: [
+      {
+        coinDenom: "IXO",
+        coinMinimalDenom: "uixo",
+        coinDecimals: 6,
+        coinGeckoId: "pool:uixo",
+        coinImageUrl: "/tokens/ixo.png",
+        isStakeCurrency: true,
+        isFeeCurrency: true,
+      },
+    ],
+    features: ["stargate", "ibc-transfer"],
+  },
+  [ChainInfoID.IxoDevnet1]: {
+    rpc: "https://devnet.ixo.earth/rpc",
+    rest: "https://devnet.ixo.earth/rest",
+    chainId: ChainInfoID.IxoDevnet1,
     chainName: "IXO",
     bip44: {
       coinType: 118,
