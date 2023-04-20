@@ -531,7 +531,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     rpc: "https://testnet.ixo.earth/rpc/",
     rest: "https://testnet.ixo.earth/rest/",
     chainId: ChainInfoID.IxoPandora8,
-    chainName: "IXO",
+    chainName: "IXO Testnet",
     bip44: {
       coinType: 118,
     },
@@ -553,7 +553,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     rpc: "https://devnet.ixo.earth/rpc/",
     rest: "https://devnet.ixo.earth/rest/",
     chainId: ChainInfoID.IxoDevnet1,
-    chainName: "IXO",
+    chainName: "IXO Devnet",
     bip44: {
       coinType: 118,
     },
