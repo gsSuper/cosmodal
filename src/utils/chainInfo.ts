@@ -90,7 +90,7 @@ export function createKeplrChainInfo({
 
 const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
   [ChainInfoID.Osmosis1]: {
-    rpc: "https://rpc-osmosis.keplr.app/", // test: "http://rpc-test.osmosis.zone/"
+    rpc: "https://rpc.osmosis.zone", // test: "http://rpc-test.osmosis.zone/"
     rest: "https://lcd-osmosis.keplr.app/", // test: "http://lcd-test.osmosis.zone/"
     chainId: ChainInfoID.Osmosis1, // test: "osmo-test-4"
     chainName: "Osmosis",
@@ -232,7 +232,7 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     features: ["stargate", "ibc-transfer", "ibc-go", "no-legacy-stdTx"],
   },
   [ChainInfoID.Regen1]: {
-    rpc: "https://rpc-regen.keplr.app",
+    rpc: "http://mainnet.regen.network:26657",
     rest: "https://lcd-regen.keplr.app",
     chainId: ChainInfoID.Regen1,
     chainName: "Regen",
