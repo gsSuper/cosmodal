@@ -1,5 +1,8 @@
 import { Wallet } from "../../types"
 import { KeplrExtensionWallet } from "./extension"
-import { KeplrMobileWallet } from "./mobile"
+// import { KeplrMobileWallet } from "./mobile"
 
-export const wallets: Wallet[] = [KeplrExtensionWallet, KeplrMobileWallet]
+export const wallets: Wallet[] = [
+  KeplrExtensionWallet,
+  // KeplrMobileWallet
+]

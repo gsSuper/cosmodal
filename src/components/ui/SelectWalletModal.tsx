@@ -75,6 +75,7 @@ const WalletIconImg = styled.img`
   height: 4rem;
   object-fit: contain;
   object-position: center;
+  border-radius: 16px;
 `
 
 const WalletInfo = styled.div`

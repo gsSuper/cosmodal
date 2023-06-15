@@ -208,7 +208,10 @@ export const WalletManagerProvider: FunctionComponent<
 
       try {
         // Connect to WalletConnect if necessary.
-        if (wallet.type === WalletType.KeplrMobile) {
+        if (
+          wallet.type === WalletType.KeplrMobile ||
+          wallet.type === WalletType.WalletConnect
+        ) {
           // Instantiate new WalletConnect instance if necessary.
           if (!_walletConnect) {
             _walletConnect = new (

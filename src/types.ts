@@ -43,6 +43,9 @@ export enum WalletType {
   Apple = "apple",
   Discord = "discord",
   Twitter = "twitter",
+
+  // WalletConnect
+  WalletConnect = "wc",
 }
 
 export interface Wallet {
