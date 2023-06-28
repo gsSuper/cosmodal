@@ -506,8 +506,8 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"],
   },
   [ChainInfoID.Ixo5]: {
-    rpc: "https://rpc-impacthub.keplr.app",
-    rest: "https://lcd-impacthub.keplr.app",
+    rpc: "https://rpc-ixo-ia.cosmosia.notional.ventures/",
+    rest: "https://impacthub.ixo.world/rest/",
     chainId: ChainInfoID.Ixo5,
     chainName: "IXO",
     bip44: {
