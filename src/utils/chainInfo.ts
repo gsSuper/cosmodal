@@ -505,10 +505,10 @@ const SimpleChainInfoList: Record<ChainInfoID, SimplifiedChainInfo> = {
     ],
     features: ["stargate", "ibc-transfer", "no-legacy-stdTx", "ibc-go"],
   },
-  [ChainInfoID.Ixo4]: {
+  [ChainInfoID.Ixo5]: {
     rpc: "https://rpc-impacthub.keplr.app",
     rest: "https://lcd-impacthub.keplr.app",
-    chainId: ChainInfoID.Ixo4,
+    chainId: ChainInfoID.Ixo5,
     chainName: "IXO",
     bip44: {
       coinType: 118,

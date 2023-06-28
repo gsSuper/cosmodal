@@ -193,7 +193,7 @@ export enum ChainInfoID {
   Uni6 = "uni-6",
   Microtick1 = "microtick-1",
   LikecoinMainnet2 = "likecoin-mainnet-2",
-  Ixo4 = "ixo-4",
+  Ixo5 = "ixo-5",
   IxoPandora8 = "pandora-8",
   IxoDevnet1 = "devnet-1",
   Bitcanna1 = "bitcanna-1",
